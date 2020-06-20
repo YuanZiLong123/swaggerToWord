@@ -26,8 +26,9 @@ public class CreateApiDoc {
 
     public static void main(String[] args) throws MalformedURLException {
 
-        String url = "http://yzl8015084.vicp.io/kc-eoms/v2/api-docs";
-        Path outputFile = Paths.get("build/swagger");
+        String url = "http://192.168.2.241:8092/v2/api-docs";
+       // Path outputFile = Paths.get("build/swagger");
+        Path outputFile = Paths.get("C:\\Users\\admin\\Desktop\\api");
         Swagger2MarkupConfig config = new Swagger2MarkupConfigBuilder()
                 .withMarkupLanguage(MarkupLanguage.MARKDOWN)
                 .withOutputLanguage(Language.ZH)
